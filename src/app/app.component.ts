@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RecipeFormComponent } from './recipe-form/recipe-form.component';
+import { RecipeListComponent } from './recipe-list/recipe-list.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RecipeFormComponent, RecipeListComponent, ShoppingListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

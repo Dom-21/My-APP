@@ -1,0 +1,7 @@
+<div class="card p-3 mb-3">
+    <h2>Shopping List</h2>
+    <ul>
+        <li *ngFor="let item of shoppingList">{{ item | capitalize }}</li>
+    </ul>
+    <button class="btn btn-danger" (click)="clearShoppingList()">Clear Shopping List</button>
+</div>

@@ -1,0 +1,85 @@
+.card {
+    background-color: whitesmoke; /* White smoke shade for the card */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 25px; /* Comfortable padding */
+    margin-bottom: 20px; /* Spacing between cards */
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333; /* Darker text for contrast */
+    text-align: center; /* Center-align header */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Spacing between form elements */
+  }
+  
+  form .form-control {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: border-color 0.3s ease;
+  }
+  
+  form .form-control:focus {
+    border-color: #007bff; /* Highlight on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+  }
+  
+  .card button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .card button.btn-success {
+    background-color: #28a745; /* Success green */
+    color: white;
+  }
+  
+  .card button.btn-success:hover {
+    background-color: #218838; /* Darker green */
+  }
+  
+  .card button.btn-secondary {
+    background-color: #6c757d; /* Secondary gray */
+    color: white;
+  }
+  
+  .card button.btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      padding: 20px;
+    }
+  
+    form .form-control {
+      font-size: 0.9rem;
+    }
+  
+    card button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  

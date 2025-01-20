@@ -1,0 +1,19 @@
+<div class="card p-3 mb-3">
+    <h2>{{ isEditing ? 'Edit Recipe' : 'Add Recipe' }}</h2>
+    <form>
+      <div class="mb-2">
+        <input type="text" class="form-control" [(ngModel)]="form.name" name="name" placeholder="Recipe Name">
+      </div>
+      <div class="mb-2">
+        <textarea class="form-control" [(ngModel)]="form.ingredients" name="ingredients" placeholder="Ingredients (comma-separated)"></textarea>
+      </div>
+      <div class="mb-2">
+        <textarea class="form-control" [(ngModel)]="form.description" name="description" placeholder="Description"></textarea>
+      </div>
+      <div class="mb-2">
+        <textarea class="form-control" [(ngModel)]="form.method" name="method" placeholder="Method"></textarea>
+      </div>
+      <button class="btn btn-success" (click)="saveRecipe()">Save</button>
+      <button class="btn btn-secondary" (click)="clearForm()">Clear</button>
+    </form>
+  </div>

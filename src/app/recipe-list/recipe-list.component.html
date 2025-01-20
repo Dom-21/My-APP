@@ -1,0 +1,11 @@
+<div class="card p-3 mb-3">
+    <h2>Recipes</h2>
+    <div *ngFor="let recipe of recipes; let i = index" class="mb-3">
+        <h4>{{ recipe.name }}</h4>
+        <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+        <p><strong>Description:</strong> {{ recipe.description }}</p>
+        <p><strong>Method:</strong> {{ recipe.method }}</p>
+        <button class="btn btn-primary" (click)="addToShoppingList(recipe.ingredients)">Add to Shopping List</button>
+        <button class="btn btn-danger" (click)="deleteRecipe(i)">Delete</button>
+    </div>
+</div>
